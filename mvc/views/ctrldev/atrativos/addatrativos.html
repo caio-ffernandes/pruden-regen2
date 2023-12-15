@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar atrativos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <h2>Cadastrar atrativo</h2>
+
+        <section id="cadatrativo">
+
+            <form action="/registraratrativos" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <!-- Iniciando primeira linha -->
+                    <div class="col">
+                        <label for="txtnomeatrativo" class="form-label">Nome Atrativo</label>
+                        <input type="text" class="form-control" name="txtnomeatrativo" id="txtnomeatrativo" tabindex="1" autofocus>
+
+                        <label for="txtlatatrativo" class="form-label">Latitude</label>
+                        <input type="number" class="form-control" name="txtlatatrativo" id="txtlatatrativo" tabindex="1" autofocus>
+                    </div>
+
+
+                    <div class="col">
+                        <label for="txtlongatrativo" class="form-label">Longitude</label>
+                        <input type="number" class="form-control" name="txtlongatrativo" id="txtlongatrativo" tabindex="1" autofocus>
+
+                        <label for="txtdescatrativo">Descrição</label>
+                        <textarea name="txtdescatrativo" id="txtdescatrativo" cols="" rows="1" class="form-control" tabindex="8"></textarea>
+                    </div>
+                   
+                </div>
+                <!-- Iniciando segunda linha -->
+                <div class="row m-4">
+                    <div class="col">
+                        <label for="photo" class="form-label">Imagem</label>
+                        <input type="file" name="photo" id="photo" class="form-control" tabindex="5">
+                    </div>
+                   
+
+                </div>
+                <!-- Linha única para dscrição -->
+                
+
+
+                <!-- linha exclusiva do botão --> 
+                <div class="row"><input type="submit" class="btn btn-warning mt-4" value="Cadastraro" name="btcadatrativo" id="btcadatrativo" tabindex="9"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

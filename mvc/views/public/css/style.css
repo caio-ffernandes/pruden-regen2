@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #191622;
+    overflow-x: hidden;
+
+
+}
+
+img {
+    width: 100%;
+}
+
+.carda {
+    margin: 70px;
+    position: relative;
+}
+
+.title {
+    inset: 0;
+    position: absolute;
+    transform: translate3d(0%, 70%, 0);
+    width: 500px;
+    margin-left: 15px;
+
+}
+
+.inner img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carda:hover .inner {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0.75);
+
+
+    filter: blur(0.8px)
+}
+
+.carda:hover .title {
+    transform: translate3d(0%, 30%, 0);
+    border-radius: 50px;
+}
+
+.inner,
+.title {
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+
+/*/////////////////////////////////////////////////*/
+
+.card2 {
+    margin: 70px;
+    position: relative;
+}
+
+.title2 {
+    inset: 0;
+    position: absolute;
+    transform: translate3d(0%, 70%, 0);
+    width: 500px;
+    margin-left: 15px;
+
+}
+
+.inner2 img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card2:hover .inner2 {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0.75);
+
+
+    filter: blur(0.8px)
+}
+
+.card2:hover .title2 {
+    transform: translate3d(0%, 30%, 0);
+    border-radius: 50px;
+}
+
+.inner2,
+.title2 {
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+/*/////////////////////////////////////////////////*/
+
+.card3 {
+    margin: 70px;
+    position: relative;
+}
+
+.title3 {
+    inset: 0;
+    position: absolute;
+    transform: translate3d(0%, 70%, 0);
+    width: 500px;
+    margin-left: 15px;
+
+}
+
+.inner3 img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card3:hover .inner3 {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0.75);
+    background-image: url(../images/giphy.gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    filter: blur(0.8px)
+}
+
+.card3:hover .title3 {
+    transform: translate3d(0%, 40%, 0);
+    border-radius: 50px;
+}
+
+.inner3,
+.title3 {
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+
+/*/////////////////////////////////////////////////*/
+
+.card4 {
+    margin: 70px;
+    position: relative;
+}
+
+.title4 {
+    inset: 0;
+    position: absolute;
+    transform: translate3d(0%, 70%, 0);
+    width: 500px;
+    margin-left: 15px;
+
+}
+
+.inner4 img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card4:hover .inner4 {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0.75);
+
+
+    filter: blur(0.8px)
+}
+
+.card4:hover .title4 {
+    transform: translate3d(0%, 42%, 0);
+    border-radius: 50px;
+}
+
+.inner4,
+.title4 {
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+/*/////////////////////////////////////////////////*/
+
+.card5 {
+    margin: 70px;
+    position: relative;
+}
+
+.title5 {
+    inset: 0;
+    position: absolute;
+    transform: translate3d(0%, 70%, 0);
+    width: 500px;
+    margin-left: 18px;
+
+}
+
+.inner5 img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card5:hover .inner5 {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0.75);
+
+
+    filter: blur(0.8px)
+}
+
+.card5:hover .title5 {
+    transform: translate3d(0%, 30%, 0);
+    border-radius: 50px;
+}
+
+.inner5,
+.title5 {
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+
+
+/* Config Rian */
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#FIRE {
+
+    position: fixed;
+    bottom: 0px;
+    height: 299px;
+    width: 100%;
+    background-image: url(../images/fogoverde.gif);
+    z-index: 999;
+
+}
+
+#meio {
+    box-shadow: 1px 1px 100px 20px black;
+    z-index: 1000;
+    width: 80%;
+    height: 93%;
+    background-color: #1e1e1f;
+    
+   
+}
+
+header {
+    top: 0px;
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+}
+
+#banner {
+    height: 300px;
+}
+
+.bannerback {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bannerback div {
+    width: 100%;
+
+}
+
+.Joe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Joeimg {
+    width: 200px !important;
+    height: 100px !important;
+
+}
+
+figure {
+    height: 200px;
+    width: 200px;
+}
+
+figure img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    width: 400px;
+
+}
+
+.borda {
+    animation: cor 10s infinite;
+}
+
+@keyframes cor {
+    25% {
+        border: 1px solid greenyellow;
+    }
+
+    50% {
+        border: 1px solid rgb(255, 255, 255);
+    }
+}
+
+.chapeu {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.texto {
+    margin-top: 160px;
+    width: 500px;
+}
+
+.chapeuDireita {
+    position: relative;
+    width: 800px;
+    margin: auto 300px;
+    display: flex;
+    flex-direction: row;
+    right: 0px;
+
+}
+
+.espaco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+nav {
+    top: 0;
+    height: 4.5rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+}
+
+
+
+/*logo*/
+.logo {
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+/*Links*/
+.nav-links {
+
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+
+.nav-links li a:hover {
+    color: #3ad018;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+/*Botão*/
+.login-button {
+    background-color: transparent;
+    border: 1.5px solid #ffffff !important;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.login-button:hover {
+    color: #131418;
+    background-color: #ffffff;
+    border: 1.5px solid #ffffff;
+    transition: all ease-in-out 350ms;
+}
+
+.join-button {
+    color: #131418;
+    background-color: #7ae020;
+    border: 1.5px solid #49d811;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1.5px solid #ffffff;
+    transition: all ease-in-out 350ms;
+}
+
+/*CARD DA PAGINA DE SKINS*/
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 8px;
+}
+
+.card p {
+    color: #666;
+    font-size: 1em;
+}
+
+.card .price {
+    color: #26e430;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card button {
+    background-color: #26e430;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #333;
+}
+
+.linha1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tituloskins {
+    width: 350px;
+    font-family: monospace;
+    border: 2px double #3d3d3d;
+    border-radius: 15px;
+    position: relative;
+    left: 430px;
+}
+
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    max-height: 225px;
+    max-width: 205px;
+    
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#cart {
+    flex-basis: 30%;
+    border: 1px solid #ddd;
+    padding: 50px;
+    z-index: 5000;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#total {
+    font-weight: bold;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: end !important;  
+    width: 600px;
+    padding: 80px;
+    color: #fff;
+    height: 200px;
+    
+}
+#meio .tituloskins{ 
+    position: absolute;
+    left: 40%;
+    
+  
+}
+
+
+
+/*STYLE DA SkinsN.html*/
+.crack{
+    background-color: #fff;
+}

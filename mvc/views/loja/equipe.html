@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="/css/style4.css">
+    <!--Box Icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        /* Estilos para melhorar a aparência do dropdown */
+        
+.dropdown {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    display: inline-block;
+    z-index: 5000px;
+}
+
+.dropbtn {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1.5px solid #fffffff5 !important;
+    border-radius: 5px;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+
+    background-color: transparent;
+    border: 1.5px solid #ffffff !important;
+    border-radius: 5px;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/skin/bruno">Skins</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a class="login-button" href="/cadastro">Login</a></li>
+           
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <button class="dropbtn">Membros <i class="bi bi-caret-down-fill "> </i></button>
+        <div class="dropdown-content">
+            <a onclick="troca2()">Bruno</a>
+            <a onclick="troca()">Adriano</a>
+            <a onclick="troca3()">Caio</a>
+            <a onclick="troca4()">Lavinia</a>
+            <a onclick="troca5()">Lucas</a>
+            <a onclick="troca6()">Maria Clara</a>
+            <a onclick="troca7()">Rian</a>
+            <a onclick="troca8()">Samuel</a>
+        </div>
+    </div>
+    <div class="container"style="height: 100vh"; >
+        <div class="box">
+            <div class="row grow-3">
+                <div class="col crescer">
+                    <div class="row align-item-center p-5 item grow-1 ">
+                        <div class="grow-1">
+                            <i style="font-size: 30px; margin-top: 20%; color: rgba(36, 182, 109, 0.8);"
+                                class='bx bxs-check-circle'></i>
+                        </div>
+                        <div class="grow-3 ">
+                            <div class="top">
+                                <strong><p id="funcao"> Programador</p></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item grow-3">
+                        <img class="item-img" id="foto" src="/images/bru.jpeg" alt="" srcset="">
+                        <div class="row justify-center">
+                            <div class="column justify-center grow-1">
+                                <i style="font-size: 30px; color: rgba(247, 234, 52, 0.8); "
+                                    class='bx bxs-user-circle'></i>
+                            </div>
+                            <div class="colum justify-center grow-3">
+                                <div>
+                                    <strong>Nome</strong>
+                                </div>
+                                <div>
+                                    <span>
+                                        <p id="nome">Bruno Santos Vieira</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="column justify-center grow-1">
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item grow-1 bg-transparent">
+                        <div class="row align-item-center justify-evenly text-center">
+                            <div class="circulo color-green">
+                                <i class='bx bxl-html5'></i>
+                            </div>
+                            <div class="circulo color-red">
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <div class="circulo color-blue">
+                                <i class='bx bxs-file-js'></i>
+                            </div>
+                            <div class="circulo color-orange">
+                                <i class='bx bxl-nodejs'></i>
+                            </div>
+                            <div class="circulo">
+                                <i class='bx bxl-nodejs'></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col crescer">
+                    <div class="item grow-1 column text-center justify-evenly align-item-center">
+                        <div class="row align-item-center justify-center color-green">
+                            <i style="font-size: 30px;" class='bx bx-heart-circle'></i>
+                        </div>
+                        <div>
+                            <i class='bx bx-happy-beaming' style="background-color: rgba(247, 234, 52, 0.8);"></i>
+                            <i class='bx bx-happy-beaming'></i>
+                            <i class='bx bx-happy-beaming'></i>
+                        </div>
+                        <div>
+                            <div>
+                                <strong>Avaliação</strong>
+                            </div>
+                            <div>
+                                23 avaliações
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item grow-1 column text-center justify-evenly align-item-center">
+                        <div class="row align-item-center justify-center color-green">
+                            <i style="font-size: 30px;" class='bx bx-card'></i>
+                        </div>
+
+                        <div>
+                            <div>
+                                <i class='bx bxs-image-add'></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col crescer">
+                    <div class="item grow-1 desc">
+                        <div>
+                            <strong>Descrição</strong>
+                        </div>
+
+                    </div>
+                    <div class="item grow-2 ">
+                        <div class="info">
+                            <p id="info">Meu nome é Bruno Santos Vieira, moro em Regente Feijó-SP, tenho 16 anos,
+                                atualmente membro da equipe Son's of Berner's, cursando desenvolvimento de sistemas,
+                                jogo atualmente no time de basquetebol de Presidente Prudente. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row grow-1">
+                <div class="col">
+                    <div class="bg-transparent row space-between grow-1 p-5">
+                        <div class="medidor">
+                            <div class="indicador">
+                                <strong class="color-orange">
+                                    <p id="porcentagem1">90 % </p>
+                                    <p>HTML</p>
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="medido">
+                            <div class="indicador">
+                                <strong>
+                                    <p id="porcentagem2">85 %</p>
+                                    <p>BD</p>
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="medid">
+                            <div class="indicador">
+                                <strong class="color-blue">
+                                    <p id="porcentagem3">90 % </p>
+                                    <p>CSS</p>
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="med">
+                            <div class="indicador">
+                                <strong class="color-green">
+                                    <p id="porcentagem4">70 %</p>
+                                    <p>JS</p>
+                                </strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+
+
+    function troca() {
+
+        let funcao = document.getElementById("funcao").innerHTML = "GESTOR"
+        let nome = document.getElementById("nome").innerHTML = "Adriano Bedin junior"
+        let foto = document.getElementById("foto").src = '/images/drico.png'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Adriano Bedin junior tenho 16 anos moro na cidade de Regente Feijó sou da equipe Son's of Berner's e já fui Scrum Master da mesma, estou no segundo ano do ensino médio e também curso desenvolvimento de sistemas no SENAI jogo basquete gosto de escutar música mas não gosto de festas e muitas pessoas em um lugar só gosto, faço parte de uma ordem que prática muitas filantropias para ajudar quem precisa (DeMolay).Me juntei a equipe para adquirir conhecimento a alimentar minha experiência nessa área de desenvolvimento de sistemas."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "50 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "73 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "40 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "25 %"
+    }
+    function troca2() {
+        let funcao = document.getElementById("funcao").innerHTML = "PROGRAMADOR"
+        let nome = document.getElementById("nome").innerHTML = "Bruno Santos Vieira"
+        let foto = document.getElementById("foto").src = '/images/bru.jpeg'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Bruno Santos Vieira, moro em Regente Feijó-SP, tenho 16 anos, atualmente membro da equipe Son's of Berner's, cursando desenvolvimento de sistemas, jogo atualmente no time de basquetebol de Presidente Prudente."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "90 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "85 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "90 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "70 %"
+    }
+    function troca3() {
+        let funcao = document.getElementById("funcao").innerHTML = "PROGRAMDOR"
+        let nome = document.getElementById("nome").innerHTML = "Caio Fernandes Oliveira"
+        let foto = document.getElementById("foto").src = '/images/ca.png'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Caio Fernandes Oliveira tenho 16 anos e moro em Regente Feijó, Faço parte dogrupo de desenvolvedores Sons of Berner's(SoB) e atualmente me encontro cursando o ensino tecnico de desenvolvimento de sistemas do Senai, participo de diversos serviços comunitáriosvisando criar diversas filantropias e nas horas vagas amasso no lozinho, me juntei ao grupono intuito de aprimorar meu conhecimento a respeito da programação e ser capaz de criar um site totalmente independente."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "90%"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "88 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "88 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "90 %"
+    }
+    function troca4() {
+        let funcao = document.getElementById("funcao").innerHTML = "WEBDESIGNER"
+        let nome = document.getElementById("nome").innerHTML = "Lavinia Viani Bezerra Santos "
+        let foto = document.getElementById("foto").src = '/images/la.jpeg'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Lavinia Viani Bezerra Santos(vulgo lala calikinha) moro em Regente Feijó, tenho16 anos,estou cursando ensino técnico de Desenvolvimento de Sistemas no SENAI. Gosto de ler e pesquisar, jogar videogames e praticar esportes. Me juntei a empresa pois procuro aumentar meu conhecimento e experiência na área."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "70 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "73 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "65 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "50 %"
+    }
+    function troca5() {
+        let funcao = document.getElementById("funcao").innerHTML = "ESCRIVÃO"
+        let nome = document.getElementById("nome").innerHTML = "Lucas Maganino Costa"
+        let foto = document.getElementById("foto").src = '/images/lu.jpeg'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Lucas Maganino Costa e tenho 16 anos, estudo na escola SESI de Regente Feijó e estou cursando o curso de desenvolvimento de sistemas do SENAI; Moro em Regente Feijó, gosto de escutar música para passar o tempo e também para estudar, pois sinto que rendo mais  quando faço isso, jogo basquete no time de Presidente Prudente, não gosto de ir a festas, pois prefiro sair com meus amigos. E por fim, quando não estou treinando ou na escola, estou   em casa estudando para provas externas."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "50 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "60 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "50 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "40 %"
+    }
+    function troca6() {
+        let funcao = document.getElementById("funcao").innerHTML = "ESCRIVÃ"
+        let nome = document.getElementById("nome").innerHTML = "Maria Clara Silva Bras Paião"
+        let foto = document.getElementById("foto").src = '/images/ma.jpeg'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Maria Clara Silva Braz Paião, tenho 16 anos e moro na c0idade de Regente Feijó, estado de São Paulo, Brasil. Sou estudante da Escola SESI de Regente Feijó e em formação no Curso Desenvolvimento de Sistemas do SESI-SENAI. Entrei na equipe Sons of Berner's com o  intuito de aprender mais sobre o trabalho em equipe, entretanto, nas horas vagas, participo de uma organização comunitária chamada Interact Club de Regente Feijó, patrocinada pelo Rotary que visa criar jovens melhores dispostos a ajudar a comunidade. Gosto muito de ler, especialmente fantasia (Harry Potter e o Enigma do príncipe é meu favorito), amo filmes e séries, sou aficionada por futebol e pelo meu time do coração, o Palmeiras."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "40 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "65 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "30 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "25 %"
+    }
+    function troca7() {
+        let funcao = document.getElementById("funcao").innerHTML = "PROGRAMADOR"
+        let nome = document.getElementById("nome").innerHTML = "Rian Moreira da silva Vilhoni"
+        let foto = document.getElementById("foto").src = '/images/ri.jpeg'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Rian Moreira Da Silva Vilhoni tenho 17 anos e moro em Regente Feijó, estou cursando ensino técnico de Desenvolvimento de Sistemas do SENAI, gosto de participar de vários serviços comunitários, como exemplo, doação nos mercados pra o Combate contra o cancer de mama e os lar dos idosos. Me juntei a empresa pois procurava aumentar me conhecimento e experiencia na área da programação."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "85 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "80 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "85 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "75 %"
+    }
+    function troca8() {
+        let funcao = document.getElementById("funcao").innerHTML = "WEBDESIGNER"
+        let nome = document.getElementById("nome").innerHTML = "Samuel Henrique Palopoli "
+        let foto = document.getElementById("foto").src = '/images/gor.jpeg'
+        let info = document.getElementById("info").innerHTML = "Meu nome é Samuel, vulgo gordão, moro em Regente Feijó,tenho 17 anos, trabalho a noite em uma hamburgueria, estudo no segundo médio na escola sesi e também cursou técnico de Desenvolvimento de sistemas no senai. Jogo basquete e também jogo jogos no computador, vou a academia, gosto de cubo mágico e sou membro da equipe sons of berner;Gosto muito de ouvir música de qualquer gênero e participo da ordem DeMolay."
+        let porcentagem1 = document.getElementById("porcentagem1").innerHTML = "50 %"
+        let porcentagem2 = document.getElementById("porcentagem2").innerHTML = "80 %"
+        let porcentagem3 = document.getElementById("porcentagem3").innerHTML = "40 %"
+        let porcentagem4 = document.getElementById("porcentagem4").innerHTML = "25 %"
+    }
+</script>
+
+</html>

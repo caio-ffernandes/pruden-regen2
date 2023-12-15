@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/css-b/style.css">
+</head>
+<body>
+      <nav>
+        <div class="logo" style="display: flex;align-items: center;">
+            <span
+                style="color:#1fc61687; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">PERENTINO</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./SkinsN.html">Skins</a></li>
+          
+            <li><a href="./termos.html">Termo de Uso</a></li>
+            <li><a href="./equipe.html">Equipe</a></li>
+            <li><a class="login-button" href="/cadastro">Login</a></li>
+        </ul>
+    </nav>
+
+<main class="dridri">
+    <section id="antg">
+    <p>Antigos projetos</p>
+    <div>
+        <img src="/images/trabalho01.png" class="card-img " alt="universo" id="trabalho" onclick="trocar()">
+       
+      </div> 
+    </section>
+      <section id="somos">
+        <h1>O que somos ?</h1>
+        <p>Somos uma equipe criado através do curso técnico de desenvolvimento de sistema, fornecido pelo SENAI, aprendendo cada vez mais a desenvolver sites, se especificando nas áreas de programação do front-end e back-end, e que no momento estamos desenvolvendo um site de vendas.</p>
+      </section>
+      <section id="objetivos">
+        <h1>Qual o nosso objetivo ?</h1>
+        <p>O objetivo da equipe Sons of Berner's é atingir as metas no desenvolvimento das atividades, ganhar experiência no ramo da tecnologia e ser capaz de criar de maneira independente um domínio próprio mostrando todo seu aprendizado aplicado em um site criado em equipe.</p>
+      </section>
+</main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+    let contador = 0
+        function trocar(){
+            contador++
+            let planeta = document.querySelector("#trabalho");
+            let troca = planeta.getAttribute("src")
+
+            if(troca =="images/trabalho01.png"){
+                planeta.setAttribute("src","images/trabalho02.png")
+
+            }
+            else if(troca =="images/trabalho02.png"){
+                planeta.setAttribute("src","images/trabalho03.png")
+            }else if(troca =="images/trabalho03.gng"){
+                planeta.setAttribute("src","images/trabalho04.png")
+            }
+            else{
+                planeta.setAttribute("src","images/trabalho01.png")
+            }
+
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,1073 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    
+    background-color: #c4c1c1;
+    height: 115vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.ml-5{
+    font-size: 13px;
+    margin-left: 3px;
+    width: 70%;
+    height: 50%;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.col{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.p-5{
+    padding: 5px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.colum{
+    display: flex;
+    flex-direction: column;
+    margin-top: 9%;
+}
+
+
+.item{
+    min-height: 10px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+    
+}
+
+.item-img{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 4px 4px 0px 0px;
+    
+}
+
+.grow-1{
+    flex-grow: 1;
+    height: 75px;
+   
+}
+
+.crescer{
+    width: calc(100% / 3)!important;
+}
+
+
+.grow-2{
+    flex-grow: 2;
+    font-size: 15px;
+    
+}
+
+.grow-3{
+    flex-grow: 3;
+    height: 100%;
+    font-size: 15px;
+    
+    
+}
+#cx{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-transparent{
+    background-color: transparent!important;
+}
+
+.circulo{
+    padding: 2px;
+    margin: 1px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-green{
+    color: green;
+}
+
+.color-red{
+    color: red;
+}
+
+.color-blue{
+    color: blue;
+}
+
+.color-orange{
+    color: orange;
+}
+
+@property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes progress {
+   to { --progress-value: 100; }
+}
+
+.medidor{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--progress-value) * 1%),rgb(255, 255, 255) 0);
+    animation: progress 2s 1 forwards;
+}
+
+.medidor:first-child{
+    background-image: conic-gradient(orange calc(var(--progress-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medidor:nth-child(2){
+    background-image: conic-gradient(black calc(var(--progress-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medidor:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--progress-value) * 1%),rgb(255, 255, 255) 0);
+}
+.medidor:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--progress-value) * 1%),rgb(255, 255, 255) 0);
+}
+.medidor:last-child{
+    background-image: conic-gradient(green calc(var(--progress-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediador::before{
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    
+}
+.medidor .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*//////////////////////////////////////////*/
+
+.desc{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+}
+.info{
+    border: 1px solid #5a4b5700;
+    margin: 15px;
+}
+.top{
+    margin-top: 5%;
+}
+
+
+/*////////////////////////////*/
+
+nav {
+    top: 0;
+    height: 4.5rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+
+}
+
+/*Links*/
+.nav-links {
+    
+    display: flex;
+    list-style: none;
+    width: 20vw;
+    margin-top: 15px;
+    margin-left: 16%;
+    padding: 0;
+    align-items: center;
+   
+}
+.nav-links .login-button{
+    margin-left: 1000%;
+    color: 3px solid #ffffff;
+}
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+
+.nav-links li .login-button a:hover {
+    color: #000000;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+/*Botão*/
+.login-button {
+    background-color: transparent;
+    border: 3px solid #ffffff !important;
+    border-radius: 5%;
+    padding: 0.4rem 0.6rem;
+    width: 65%;
+    height: 35%;
+    margin-left: 2vw;
+    font-size: 100%;
+    cursor: pointer;
+
+}
+
+.login-button:hover {
+    color: #131418;
+    background-color: #ffffff;
+    border: 1.5px solid #ffffff;
+ 
+}
+
+.join-button {
+    color: #131418;
+    background-color: #000000;
+    border: 1.5px solid #000000;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1.5px solid #ffffff;
+    transition: all ease-in-out 350ms;
+}
+
+/*/////////////////////////////////////////////////*/
+
+@property --progres-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes progres {
+   to { --progres-value: 100; }
+}
+
+.medido{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--progres-value) * 1%),rgb(255, 255, 255) 0);
+    animation: progres 2s 1 forwards;
+}
+
+.medido:first-child{
+    background-image: conic-gradient(orange calc(var(--progres-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medido:nth-child(2){
+    background-image: conic-gradient(black calc(var(--progres-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medido:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--progres-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medido:last-child{
+    background-image: conic-gradient(green calc(var(--progres-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--progres-value);
+    content: counter(percentage) '%';
+    
+}
+.medido .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+@property --progre-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes progre {
+   to { --progre-value: 100; }
+}
+
+.medid{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--progre-value) * 1%),rgb(255, 255, 255) 0);
+    animation: progre 2s 1 forwards;
+}
+
+.medid:first-child{
+    background-image: conic-gradient(orange calc(var(--progre-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medid:nth-child(2){
+    background-image: conic-gradient(black calc(var(--progre-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medid:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--progre-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.medid:last-child{
+    background-image: conic-gradient(green calc(var(--progre-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--progre-value);
+    content: counter(percentage) '%';
+    
+}
+.medid .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*/////////////////////////////////////////////////////*/
+
+@property --progr-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes progr {
+   to { --progr-value: 100; }
+}
+
+.med{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--progr-value) * 1%),rgb(255, 255, 255) 0);
+    animation: progr 2s 1 forwards;
+}
+
+.med:first-child{
+    background-image: conic-gradient(orange calc(var(--progr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.med:nth-child(2){
+    background-image: conic-gradient(black calc(var(--progr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.med:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--progr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.med:last-child{
+    background-image: conic-gradient(green calc(var(--progr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--progr-value);
+    content: counter(percentage) '%';
+    
+}
+.med .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+@property --prog-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes prog {
+   to { --prog-value: 70; }
+}
+
+.lav{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--prog-value) * 1%),rgb(255, 255, 255) 0);
+    animation: prog 2s 1 forwards;
+}
+
+.lav:first-child{
+    background-image: conic-gradient(orange calc(var(--prog-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lav:nth-child(2){
+    background-image: conic-gradient(black calc(var(--prog-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lav:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--prog-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lav:last-child{
+    background-image: conic-gradient(green calc(var(--prog-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--prog-value);
+    content: counter(percentage) '%';
+    
+}
+.lav .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+@property --pro-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes pro {
+   to { --pro-value: 73; }
+}
+
+.lavi{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--pro-value) * 1%),rgb(255, 255, 255) 0);
+    animation: pro 2s 1 forwards;
+}
+
+.lavi:first-child{
+    background-image: conic-gradient(orange calc(var(--pro-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lavi:nth-child(2){
+    background-image: conic-gradient(black calc(var(--pro-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lavi:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--pro-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lavi:last-child{
+    background-image: conic-gradient(green calc(var(--pro-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--pro-value);
+    content: counter(percentage) '%';
+    
+}
+.lavi .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+
+@property --pr-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes pr {
+   to { --pr-value: 65; }
+}
+
+.livini{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--pr-value) * 1%),rgb(255, 255, 255) 0);
+    animation: pr 2s 1 forwards;
+}
+
+.livini:first-child{
+    background-image: conic-gradient(orange calc(var(--pr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.livini:nth-child(2){
+    background-image: conic-gradient(black calc(var(--pr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.livini:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--pr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.livini:last-child{
+    background-image: conic-gradient(green calc(var(--pr-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--pr-value);
+    content: counter(percentage) '%';
+    
+}
+.livini .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+@property --p-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes p {
+   to { --p-value: 85; }
+}
+
+.ri{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--p-value) * 1%),rgb(255, 255, 255) 0);
+    animation: p 2s 1 forwards;
+}
+
+.ri:first-child{
+    background-image: conic-gradient(orange calc(var(--p-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ri:nth-child(2){
+    background-image: conic-gradient(black calc(var(--p-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ri:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--p-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ri:last-child{
+    background-image: conic-gradient(green calc(var(--p-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--p-value);
+    content: counter(percentage) '%';
+    
+}
+.ri .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*/////////////////////////////////////////////////////////////////*/
+@property --pb-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes pb {
+   to { --pb-value: 80; }
+}
+
+.ria{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--pb-value) * 1%),rgb(255, 255, 255) 0);
+    animation: pb 2s 1 forwards;
+}
+
+.ria:first-child{
+    background-image: conic-gradient(orange calc(var(--pb-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ria:nth-child(2){
+    background-image: conic-gradient(black calc(var(--pb-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ria:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--pb-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ria:last-child{
+    background-image: conic-gradient(green calc(var(--pb-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--pb-value);
+    content: counter(percentage) '%';
+    
+}
+.ria .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*////////////////////////////////////////////////////////////*/
+@property --pbg-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes pbg {
+   to { --pbg-value: 75; }
+}
+
+.rian{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--pbg-value) * 1%),rgb(255, 255, 255) 0);
+    animation: pbg 2s 1 forwards;
+}
+
+.rian:first-child{
+    background-image: conic-gradient(orange calc(var(--pbg-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.rian:nth-child(2){
+    background-image: conic-gradient(black calc(var(--pbg-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.rian:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--pbg-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.rian:last-child{
+    background-image: conic-gradient(green calc(var(--pbg-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--pbg-value);
+    content: counter(percentage) '%';
+    
+}
+.rian .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+@property --ca-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes ca {
+   to { --ca-value: 90; }
+}
+
+.ca{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--ca-value) * 1%),rgb(255, 255, 255) 0);
+    animation: ca 2s 1 forwards;
+}
+
+.ca:first-child{
+    background-image: conic-gradient(orange calc(var(--ca-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ca:nth-child(2){
+    background-image: conic-gradient(black calc(var(--ca-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ca:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--ca-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ca:last-child{
+    background-image: conic-gradient(green calc(var(--ca-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--ca-value);
+    content: counter(percentage) '%';
+    
+}
+.ca .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*////////////////////////////////////////////////////////////*/
+@property --cai-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes cai {
+   to { --cai-value: 88; }
+}
+
+.caio{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--cai-value) * 1%),rgb(255, 255, 255) 0);
+    animation: cai 2s 1 forwards;
+}
+
+.caio:first-child{
+    background-image: conic-gradient(orange calc(var(--cai-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.caio:nth-child(2){
+    background-image: conic-gradient(black calc(var(--cai-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.caio:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--cai-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.caio:last-child{
+    background-image: conic-gradient(green calc(var(--cai-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--cai-value);
+    content: counter(percentage) '%';
+    
+}
+.caio .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*/////////////////////////////////////////////////////////////*/
+@property --luc-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes luc {
+   to { --luc-value: 60; }
+}
+
+.lu{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--luc-value) * 1%),rgb(255, 255, 255) 0);
+    animation: luc 2s 1 forwards;
+}
+
+.lu:first-child{
+    background-image: conic-gradient(orange calc(var(--luc-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lu:nth-child(2){
+    background-image: conic-gradient(black calc(var(--luc-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lu:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--luc-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.lu:last-child{
+    background-image: conic-gradient(green calc(var(--luc-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--luc-value);
+    content: counter(percentage) '%';
+    
+}
+.lu .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+@property --mar-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes mar {
+   to { --mar-value: 30; }
+}
+
+.ma{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: conic-gradient(red calc(var(--mar-value) * 1%),rgb(255, 255, 255) 0);
+    animation: mar 2s 1 forwards;
+}
+
+.ma:first-child{
+    background-image: conic-gradient(orange calc(var(--mar-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ma:nth-child(2){
+    background-image: conic-gradient(black calc(var(--mar-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ma:nth-child(3){
+    background-image: conic-gradient(blue calc(var(--mar-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.ma:last-child{
+    background-image: conic-gradient(green calc(var(--mar-value) * 1%),rgb(255, 255, 255) 0);
+}
+
+.mediado::before{
+    counter-reset: percentage var(--mar-value);
+    content: counter(percentage) '%';
+    
+}
+.ma .indicador{
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

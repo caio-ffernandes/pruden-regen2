@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar promocaoss</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <h2> Atualizar promocaoss</h2>
+        <section id="alteratrativos">
+            <form id="form-promocao">
+                <!-- Iniciando primeira -->
+                <div class="row">
+                    <input value="<%= promocao.id %>" aria-hidden="true" type="hidden"  id="txtid" name="txtid">
+                    <div class="col">                       
+                        <label for="txtnomepromo" class="form-label" >Nome da promocao</label>
+                        <input value="<%= promocao.nome %>" type="text" class="form-control" name="txtnomepromo" id="txtnomepromo" tabindex="1" autofocus>
+                    </div>
+                   <div class="col">
+                        <label for="dtstartpromo" class="form-label" >Inicio da promocao</label>
+                        <input value="<%= promocao.dtStart %>" type="date" class="form-control" name="dtstartpromo" id="dtstartpromo" tabindex="2">
+                   </div>
+                </div>
+                 <!-- Iniciando segunda linha -->
+                <div class="row mt-4">
+                    <div class="col">
+                        
+                        <label for="dtendpromo" class="form-label" >Fim da promocao</label>
+                        <input value="<%= promocao.dtEnd %>" type="date" class="form-control" name="dtendpromo" id="dtendpromo" tabindex="3">
+                    </div>
+                   <div class="col">
+                        <label for="txtdescpromo" class="form-label" >Descrição da promocao</label>
+                        <input value="<%= promocao.descricao %>" type="text" class="form-control" name="txtdescpromo" id="txtdescpromo" tabindex="4">
+                   </div>
+                </div>
+                <div class="col bg-light rounded-3 m-4">
+                    <h2>Promomoção ativa?</h2>
+                    <select name="ativapromo" id="ativapromo" class="form-control" tabindex="7">
+                        <option value="">Selecione uma opção</option>
+                        <option value="1">Sim</option>
+                        <option value="0">Não</option>
+                    </select>
+                    
+                    <label for="seldescpromo" class="form-label">Desconto</label>
+                    <select name="seldescpromo" id="seldescpromo" class="form-control" tabindex="3">
+                        <option value="">Selecione uma opção</option>
+                        
+                        <option value="<%= promocao.desconto %>"><%= promocao.desconto %></option>
+                        
+                    </select>
+                       
+                       
+                </div>
+                <div class="row">
+                   <a href="/promocoes/lista" onclick="atualizar();">
+                        <input type="button" class="btn btn-warning mt-4" value="Cadastrar" name="btcadcupons" id="btcadcupons" tabindex="5">
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+
+
+document.getElementById("form-promocao").addEventListener("submit", (e) => {
+            e.preventDefault()
+            atualizar()
+        } )
+
+        async function atualizar(){
+
+            const promocao = {
+                "id":document.getElementById("txtid").value,
+            "nome":document.getElementById("txtnomepromo").value,
+            "dtStart":document.getElementById("dtstartpromo").value,
+            "dtEnd":document.getElementById("dtendpromo").value,
+            "descricao":document.getElementById("txtdescpromo").value,
+            "ativa":document.getElementById("ativapromo").value,
+            "desconto":document.getElementById("seldescpromo").value
+                
+            }
+
+              
+            const resposta = await fetch('/promocoes/alterar', { 
+                method:'PUT',
+                headers: {
+                    'Content-Type':'application/json'
+                },
+                body: JSON.stringify(promocao)
+             })
+            const json = await resposta.json()
+            const status = await json
+
+            console.log(promocao)
+
+        }
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

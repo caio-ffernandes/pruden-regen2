@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(#30142b, #27a135);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin-top: 75px;
+
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.068), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login-form {
+    margin-top: 25px;
+    text-align: left;
+}
+
+input[type=text] {
+    background-color: #1a22261f;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-top: 0px;
+    border-radius: 0px;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    color: #ECF0F5;
+}
+
+input[type=password] {
+    background-color: #1a22262f;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+}
+
+.form-group {
+    margin: 30px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #1a222627;
+    color: #ECF0F5;
+}
+
+.form-control-label {
+    font-size: 15px;
+    color: #6C6C6C;
+    letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    border-color: #ffffff !important;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #07101438 !important;
+    background-image: -webkit-linear-gradient(160deg, #071014 0%, #25de0d 100%) !important;
+    background-image: -moz-linear-gradient(160deg, #071014 0%, #25de0d 100%) !important;
+    background-image: -o-linear-gradient(160deg, #071014 0%, #25de0d 100%) !important;
+    background-image: linear-gradient(160deg, #071014 0%, #25de0d 100%) !important;
+
+    color: #cad8c8!important;
+}
+
+.login-button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.login-text {
+    padding-left: 0px;
+    color: #A2A4A4;
+}
